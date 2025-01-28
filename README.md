@@ -73,10 +73,13 @@ Backend will now run on:
 | DELETE | `/api/tasks/{id}` | Delete a task           |
 
 
-📸 Screenshots
-Task Manager UI
-<img src="image.png" width="500"/>
+## 📸 Screenshots
+
+Landing Page
+<img src="landing.png" width="500"/>
+Adding a Task
 <img src="addTask.png" width="500"/>
+Completing a Task
 <img src="taskComplete.png" width="500"/>
 
 
