@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using server.Data;
 using server.Models;
 using TaskEntity = server.Models.Task;
@@ -14,7 +16,6 @@ public class TasksController : ControllerBase
         _context = context;
     }
 
-    // Get all tasks
     [HttpGet]
     public IActionResult GetTasks()
     {
@@ -24,12 +25,13 @@ public class TasksController : ControllerBase
     [HttpPost]
     public IActionResult CreateTask([FromBody] TaskEntity task)
     {
+        if (task == null) return BadRequest("Task data is required.");
+        
         _context.Tasks.Add(task);
         _context.SaveChanges();
         return CreatedAtAction(nameof(GetTasks), new { id = task.Id }, task);
     }
 
-    // Mark a task as completed
     [HttpPut("{id}")]
     public IActionResult MarkAsCompleted(int id)
     {
@@ -41,7 +43,6 @@ public class TasksController : ControllerBase
         return Ok(task);
     }
 
-    // Delete a task
     [HttpDelete("{id}")]
     public IActionResult DeleteTask(int id)
     {
