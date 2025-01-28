@@ -76,9 +76,9 @@ Backend will now run on:
 ## 📸 Screenshots
 
 Landing Page \
-<img src="landing.png" width="500"/>
+<img src="landing.png" width="500"/> \
 Adding a Task \
-<img src="addTask.png" width="500"/>
+<img src="addTask.png" width="500"/> \
 Completing a Task \
 <img src="taskComplete.png" width="500"/>
 
