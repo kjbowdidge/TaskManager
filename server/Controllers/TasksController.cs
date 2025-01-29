@@ -7,6 +7,7 @@ using TaskEntity = server.Models.Task;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class TasksController : ControllerBase
 {
     private readonly TaskManagerDbContext _context;
@@ -23,10 +24,8 @@ public class TasksController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateTask([FromBody] TaskEntity task)
+    public IActionResult CreateTask([FromBody] TaskEntity task) 
     {
-        if (task == null) return BadRequest("Task data is required.");
-        
         _context.Tasks.Add(task);
         _context.SaveChanges();
         return CreatedAtAction(nameof(GetTasks), new { id = task.Id }, task);
@@ -54,3 +53,5 @@ public class TasksController : ControllerBase
         return NoContent();
     }
 }
+
+

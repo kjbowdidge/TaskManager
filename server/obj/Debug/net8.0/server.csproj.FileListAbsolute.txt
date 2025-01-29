@@ -6,8 +6,10 @@
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/server.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/server.pdb
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Humanizer.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.Bcl.Memory.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.Build.Locator.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
@@ -29,6 +31,12 @@
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Microsoft.OpenApi.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Mono.TextTemplating.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/Npgsql.dll
@@ -43,6 +51,7 @@
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.Composition.Runtime.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.Composition.TypedParts.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.IO.Pipelines.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.Text.Encodings.Web.dll
 /Users/kbowdidge/Desktop/TaskManager/server/bin/Debug/net8.0/System.Text.Json.dll

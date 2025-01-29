@@ -2,14 +2,20 @@ import React, { useEffect, useState } from 'react';
 import TaskList from './components/TaskList';
 import TaskModal from './components/TaskModal';
 import { fetchTasks, addTask, updateTask, deleteTask } from './features/tasks/tasksApi';
-import './styles.css'; 
+import { fetchToken, getToken } from './utils/auth';
+import './styles.css';
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
     const [isModalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        fetchTasks().then(setTasks);
+        fetchToken().then((token) => {
+            if (token) {
+                console.log("Token retrieved:", token);
+                fetchTasks().then(setTasks);
+            }
+        });
     }, []);
 
     const handleComplete = async (id) => {
@@ -32,7 +38,7 @@ const App = () => {
     return (
         <div className="app-container">
             <h1>Task Manager</h1>
-            <button className="add-task-btn" onClick={() => setModalOpen(true)}>+ Add Task</button> {/* Open Modal */}
+            <button className="add-task-btn" onClick={() => setModalOpen(true)}>+ Add Task</button> 
             <TaskList tasks={tasks} onComplete={handleComplete} onDelete={handleDelete} />
             <TaskModal 
                 isOpen={isModalOpen} 
@@ -44,6 +50,8 @@ const App = () => {
 };
 
 export default App;
+
+
 
 
 
